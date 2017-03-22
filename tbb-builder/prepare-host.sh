@@ -22,7 +22,7 @@ sudo usermod -aG docker root
 test $(whoami) = root || sudo usermod -aG docker $(whoami)
 
 # install required packages
-apt-get install -y make libyaml-libyaml-perl libtemplate-perl libio-handle-util-perl libio-all-perl libio-captureoutput-perl libfile-slurp-perl libstring-shellquote-perl libsort-versions-perl libdigest-sha-perl libdata-uuid-perl libdata-dump-perl git
+apt-get install -y make libyaml-libyaml-perl libtemplate-perl libio-handle-util-perl libio-all-perl libio-captureoutput-perl libfile-slurp-perl libstring-shellquote-perl libsort-versions-perl libdigest-sha-perl libdata-uuid-perl libdata-dump-perl libfile-copy-recursive-perl git 
 
 mkdir -p /var/src
 cd /var/src
